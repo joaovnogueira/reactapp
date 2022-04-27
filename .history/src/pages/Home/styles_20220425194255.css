@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1{
+    margin: 84px 0 24px;
+}
