@@ -11,7 +11,7 @@ export function Home() {
       <button type="button">Adicionar</button>
 
       <Card />
-      <Card></Card>
+      <C></C>
 
     </div>
 
