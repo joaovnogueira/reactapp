@@ -20,7 +20,7 @@ const [studentName, setStudentName] = useState('Amanda');
 
       <button type="button">Adicionar</button>
 
-      <Card name="Paulinho" time="10:55:25" />
+      <Card name="Paultime="10:55:25" />
       <Card name="João" time="10:54:35"/>
 
 

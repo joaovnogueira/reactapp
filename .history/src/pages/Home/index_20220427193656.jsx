@@ -5,7 +5,7 @@ import { Card } from '../../components/Card'
 
 export function Home() {
 
-const [studentName, setStudentName] = useState('Amanda');
+const [studentName, setStudentName] = useState();
 
   return (
     <div className="container">
@@ -20,8 +20,8 @@ const [studentName, setStudentName] = useState('Amanda');
 
       <button type="button">Adicionar</button>
 
-      <Card name="Paulinho" time="10:55:25" />
-      <Card name="João" time="10:54:35"/>
+      <Card name={studentName} time="10:55:25" />
+      <Card name={studetName} time="10:54:35"/>
 
 
     </div>

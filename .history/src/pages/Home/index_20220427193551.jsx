@@ -3,9 +3,9 @@ import './styles.css'
 
 import { Card } from '../../components/Card'
 
-export function Home() {
+export function Home() 
 
-const [studentName, setStudentName] = useState('Amanda');
+const [studentName, setStudentName] = useState();
 
   return (
     <div className="container">
@@ -20,7 +20,7 @@ const [studentName, setStudentName] = useState('Amanda');
 
       <button type="button">Adicionar</button>
 
-      <Card name="Paulinho" time="10:55:25" />
+      <Card name="Rodrigo" time="10:55:25" />
       <Card name="João" time="10:54:35"/>
 
 
@@ -28,4 +28,4 @@ const [studentName, setStudentName] = useState('Amanda');
 
   )
 
-  }
+
