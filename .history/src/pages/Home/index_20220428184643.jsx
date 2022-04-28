@@ -20,11 +20,7 @@ function handleAddStudent(){
   setStudents(prevState => [...prevState, newStudent]);
 }
 
-useEffect(() => {
-  //ações ou aquilo que eu quero que execute
-  //[] quais são os estados que nosso useEffect depende 
-},[])
-
+useEffect(() => )
   return (
     <div className="container">
       <header>

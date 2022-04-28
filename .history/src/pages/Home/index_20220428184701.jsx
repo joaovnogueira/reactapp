@@ -21,8 +21,7 @@ function handleAddStudent(){
 }
 
 useEffect(() => {
-  //ações ou aquilo que eu quero que execute
-  //[] quais são os estados que nosso useEffect depende 
+  
 },[])
 
   return (
