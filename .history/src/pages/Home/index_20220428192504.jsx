@@ -24,18 +24,7 @@ function handleAddStudent(){
 useEffect(() => {
   //ações ou aquilo que eu quero que execute
   //[] quais são os estados que nosso useEffect depende 
-  async function fetchData() {
-    const response = await fetch("https://api.github.com/users/birobirobiro");
-    const data = await response.json();
-    console.log("DADOS =>", data);
-
-    setUser({
-      name: data.name,
-      avatar: data.avatar_url,
-    });
-  }
-
-  fetchData();
+  
 },[])
 
   return (

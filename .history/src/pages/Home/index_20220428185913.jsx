@@ -7,7 +7,6 @@ export function Home() {
 
 const [studentName, setStudentName] = useState('');
 const [students, setStudents] = useState([]);
-const [user, setUser] = useState({name: '', avatar:''})
 
 function handleAddStudent(){
   const newStudent = {
@@ -24,18 +23,7 @@ function handleAddStudent(){
 useEffect(() => {
   //ações ou aquilo que eu quero que execute
   //[] quais são os estados que nosso useEffect depende 
-  async function fetchData() {
-    const response = await fetch("https://api.github.com/users/birobirobiro");
-    const data = await response.json();
-    console.log("DADOS =>", data);
-
-    setUser({
-      name: data.name,
-      avatar: data.avatar_url,
-    });
-  }
-
-  fetchData();
+  
 },[])
 
   return (
@@ -43,8 +31,8 @@ useEffect(() => {
       <header>
         <h1>Lista de presença</h1>
         <div>
-          <strong>{user.name}</strong>
-          <img src={user.avatar} alt="Foto de perfil" />
+          <strong>João</strong>
+          <img src="https://github.com/joaovnogueira.png" alt="Foto de perfil" />
         </div>
       </header>
 
@@ -75,4 +63,4 @@ useEffect(() => {
 
   )
 
-}
+  }

@@ -6,8 +6,8 @@ import { Card } from '../../components/Card'
 export function Home() {
 
 const [studentName, setStudentName] = useState('');
-const [students, setStudents] = useState([]);
-const [user, setUser] = useState({name: '', avatar:''})
+const [students, setStudents] = useState({name: '', avatar:''});
+const [user, setUser] = useState({ })
 
 function handleAddStudent(){
   const newStudent = {
@@ -24,18 +24,12 @@ function handleAddStudent(){
 useEffect(() => {
   //ações ou aquilo que eu quero que execute
   //[] quais são os estados que nosso useEffect depende 
-  async function fetchData() {
-    const response = await fetch("https://api.github.com/users/birobirobiro");
-    const data = await response.json();
-    console.log("DADOS =>", data);
-
-    setUser({
-      name: data.name,
-      avatar: data.avatar_url,
-    });
-  }
-
-  fetchData();
+  fetch('https://api.github.com/users/joaovnogueira')
+  .then(response => response.json())
+  .then(data => {
+    name: data.name,
+    name: data.avatar
+  })
 },[])
 
   return (
@@ -43,7 +37,7 @@ useEffect(() => {
       <header>
         <h1>Lista de presença</h1>
         <div>
-          <strong>{user.name}</strong>
+          <strong>João</strong>
           <img src={user.avatar} alt="Foto de perfil" />
         </div>
       </header>
