@@ -16,12 +16,7 @@
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    margin-left: 7px;
-}
-
-.container div{
-    display: flex;
-    align-items: center;
+    
 }
 
 .container input{

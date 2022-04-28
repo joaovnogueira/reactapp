@@ -26,10 +26,6 @@ function handleAddStudent(){
     <div className="container">
       <header>
         <h1>Lista de presença</h1>
-        <div>
-          <strong>João</strong>
-          <img src="https://github.com/joaovnogueira.png" alt="Foto de perfil" />
-        </div>
       </header>
 
       <input 
