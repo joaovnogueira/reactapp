@@ -42,11 +42,8 @@ function handleAddStudent(){
       
       {
         students.map(student => (
-          <Card 
-            key={student.time}
-            name={student.name} 
-            time={student.time} 
-          />
+        <Card 
+          name={student.name} time={student.time} />
         ))
       }
 

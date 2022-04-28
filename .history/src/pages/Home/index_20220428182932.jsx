@@ -43,7 +43,7 @@ function handleAddStudent(){
       {
         students.map(student => (
           <Card 
-            key={student.time}
+            key={}
             name={student.name} 
             time={student.time} 
           />

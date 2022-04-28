@@ -17,7 +17,7 @@ function handleAddStudent(){
       second: '2-digit'
     })
   }
-  setStudents(prevState => [...prevState, newStudent]);
+  setStudents([newStudent]);
 }
 
 
@@ -34,20 +34,12 @@ function handleAddStudent(){
       />
 
       <button 
-        type="button"
-        onClick={handleAddStudent}
-      >
-        Adicionar
-      </button>
+        type="button">
+          Adicionar</button>
       
       {
-        students.map(student => (
-          <Card 
-            key={student.time}
-            name={student.name} 
-            time={student.time} 
-          />
-        ))
+        students.map(student => <Card name={student.name} time={student.time} />)
+
       }
 
     </div>
