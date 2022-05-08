@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import './styles.css'
 
-import { Card } from '../../components/Card'
+import { Card, CardProps } from '../../components/Card'
+
+type ProfileResponse = {
+  name: string;
+
+}
 
 export function Home() {
 
 const [studentName, setStudentName] = useState('');
-const [students, setStudents] = useState([]);
+const [students, setStudents] = useState<CardProps[]>([]);
 const [user, setUser] = useState({name: '', avatar:''})
 
 function handleAddStudent(){
@@ -25,7 +30,7 @@ useEffect(() => {
   //ações ou aquilo que eu quero que execute
   //[] quais são os estados que nosso useEffect depende 
   async function fetchData() {
-    const response = await fetch("https://api.github.com/users/joao.v.nogueira");
+    const response = await fetch("https://api.github.com/users/joaovnogueira");
     const data = await response.json();
     console.log("DADOS =>", data);
 
